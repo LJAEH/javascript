@@ -1,0 +1,6 @@
+
+input 태그 타입 5가지 이상
+
+자바스크립트 배열
+
+NaN == not a number
