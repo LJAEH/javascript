@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" 
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+    crossorigin="anonymous"></script>
+
+    
+    <title>jQuery연습문제</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div id="box">
+        <div id="color"></div>
+        <input type="text" id="input1">
+    </div>
+
+    <button type="button" id="btn1">변경</button>
+    
+    <hr>
+
+    <script>
+        $("#box").css("display","flex")
+        .css("flex-direction","column")
+        .css("width","100px");
+
+        $("#color").css("border", "1px solid black")
+        .css ("width", "100px")
+        .css ("height", "100px")
+        .css ("margin-bottom","5px");
+
+        $("#input1").on("input",function(){
+            $("#color").css("backgroundColor",this.val());
+        })
+  
+    </script>
+
+    
+</body>
+</html>
